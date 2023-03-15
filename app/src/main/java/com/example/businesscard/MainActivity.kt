@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    BusinessCardScreen()
                 }
             }
         }
@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
+fun BusinessCardScreen() {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -109,6 +109,6 @@ fun ContactInformation() {
 @Composable
 fun DefaultPreview() {
     BusinessCardTheme {
-        Greeting("Android")
+        BusinessCardScreen()
     }
 }
