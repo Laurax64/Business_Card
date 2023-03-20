@@ -5,12 +5,11 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -46,7 +45,7 @@ fun BusinessCardScreen() {
         ) {
             Image(
                 painter = painterResource(R.drawable.android_icon),
-                contentDescription = null,
+                contentDescription = "Android Icon",
                 modifier = Modifier.size(200.dp)
                 )
             Text(
@@ -72,34 +71,55 @@ fun BusinessCardScreen() {
 fun ContactInformation() {
     Column() {
         Row() {
-            Image(
-                painter = painterResource(R.drawable.linkedin_icon),
-                contentDescription = null,
-                modifier = Modifier.size(50.dp).padding(end = 4.dp)
-            )
-            Text(
-                text = stringResource(R.string.linkedin_link)
-            )
+            Button(
+                onClick = { /*TODO*/ },
+                colors = ButtonDefaults.buttonColors(backgroundColor = Color.White)) {
+                Image(
+                    painter = painterResource(R.drawable.linkedin_icon),
+                    contentDescription = "Linkedin icon",
+                    modifier = Modifier
+                        .size(50.dp)
+                        .padding(end = 4.dp)
+                )
+                Text(
+                    text = "Linkedin",
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
         }
         Row() {
+            Button(
+                onClick = { /*TODO*/ },
+                colors = ButtonDefaults.buttonColors(backgroundColor = Color.White)) {
             Image(
                 painter = painterResource(R.drawable.github_icon),
-                contentDescription = null,
-                modifier = Modifier.size(50.dp).padding(end = 4.dp)
+                contentDescription = "Github icon",
+                modifier = Modifier
+                    .size(50.dp)
+                    .padding(end = 4.dp)
             )
             Text(
-                text = stringResource(R.string.github_link)
+                text = "Github" ,
+                modifier = Modifier.fillMaxWidth()
             )
         }
+        }
         Row() {
-            Image(
-                painter = painterResource(R.drawable.gmail_icon),
-                contentDescription = null,
-                modifier = Modifier.size(50.dp).padding(end = 4.dp)
-            )
-            Text(
-                text = stringResource(R.string.gmail_address),
-            )
+            Button(
+                onClick = { /*TODO*/ },
+                colors = ButtonDefaults.buttonColors(backgroundColor = Color.White)) {
+                Image(
+                    painter = painterResource(R.drawable.gmail_icon),
+                    contentDescription = "Gmail icon",
+                    modifier = Modifier
+                        .size(50.dp)
+                        .padding(end = 4.dp)
+                )
+                Text(
+                    text = "Gmail",
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
         }
     }
 
