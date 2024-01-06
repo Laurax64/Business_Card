@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Business Card</string>
-    <string name="occupation">Student, Android Developer</string>
-    <string name="name">Laura Voetzsch</string>
-    <string name="gmail_address">LauraVoetzsch@gmail.com</string>
-    <string name="github_link">github.com/Laurax64</string>
-    <string name="linkedin_link">linkedin.com/in/laura-voetzsch-a0b727265/</string>
+    <string name="occupation">Android Developer</string>
+    <string name="name">Name Surname</string>
+    <string name="gmail_address">NameSurname@gmail.com</string>
+    <string name="github_link">github.com/GitHub/NameSurname</string>
+    <string name="linkedin_link">www.linkedin.com/in/NameSurname</string>
 </resources>
