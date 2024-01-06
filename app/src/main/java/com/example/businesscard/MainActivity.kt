@@ -55,18 +55,18 @@ fun BusinessCardScreen() {
         Image(
             painter = painterResource(R.drawable.android_icon),
             contentDescription = "Android Icon",
-            modifier = Modifier.size(400.dp)
+            modifier = Modifier.size(200.dp)
         )
         Text(
             text = stringResource(R.string.name),
-            fontSize = 80.sp
+            fontSize = 40.sp
         )
         Text(
             text = stringResource(R.string.occupation),
-            fontSize = 40.sp,
+            fontSize = 20.sp,
             textAlign = TextAlign.Center
         )
-        Spacer(Modifier.height(300.dp))
+        Spacer(Modifier.height(150.dp))
         ContactInformation()
     }
 }
@@ -82,25 +82,25 @@ fun ContactInformation() {
                 Image(
                     painter = painterResource(R.drawable.linkedin_icon),
                     contentDescription = "Linkedin icon",
-                    modifier = Modifier.size(100.dp).padding(end = 4.dp)
+                    modifier = Modifier.size(50.dp).padding(end = 4.dp)
                 )
-                Text(text = stringResource(R.string.linkedin_link), fontSize = 30.sp)
+                Text(text = stringResource(R.string.linkedin_link), fontSize = 15.sp)
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
                     painter = painterResource(R.drawable.github_icon),
                     contentDescription = "Github icon",
-                    modifier = Modifier.size(100.dp).padding(end = 4.dp)
+                    modifier = Modifier.size(50.dp).padding(end = 4.dp)
                 )
-                Text(text = stringResource(R.string.github_link), fontSize = 30.sp)
+                Text(text = stringResource(R.string.github_link), fontSize = 15.sp)
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
                     painter = painterResource(R.drawable.gmail_icon),
                     contentDescription = "Gmail icon",
-                    modifier = Modifier.size(100.dp).padding(end = 4.dp)
+                    modifier = Modifier.size(50.dp).padding(end = 4.dp)
                 )
-                Text(text = stringResource(R.string.gmail_address), fontSize = 30.sp)
+                Text(text = stringResource(R.string.gmail_address), fontSize = 15.sp)
             }
         }
     }
