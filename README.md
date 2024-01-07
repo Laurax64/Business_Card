@@ -1,6 +1,6 @@
 # Business Card App
 
-To practice the concepts I learned in Unit 1 of [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course), including 
+To practice the concepts I learned in unit 1 of [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course), including 
 a simple user interface that displays text and images I build this app that displays a business card.
 
 
